@@ -22,9 +22,9 @@ function onClickMe() {
 
  // window.open(URL.createObjectURL(blob), "_blank");
 
-    var a = document.createElement("a");
+  var a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
-  a.download = "file.pdf";
+  a.target = "_blank";
   a.click();
     console.log('text5')
 }
