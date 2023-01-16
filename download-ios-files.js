@@ -29,6 +29,17 @@ function onClickMe() {
 
 
   window.open(URL.createObjectURL(blob), "_blank");
+  
+  var iframe = document.createElement('iframe');
+  iframe.src = URL.createObjectURL(blob);
+  document.body.appendChild(iframe);
+
+    var a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "file.pdf";
+  a.click();
+
+
 }
 
 
