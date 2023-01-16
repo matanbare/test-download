@@ -31,6 +31,7 @@ function onClickMe() {
   fileDownload(blob, 'yarin-matan.pdf');
 
     console.log('text5')
+  console.log('text5')
 }
 
 
