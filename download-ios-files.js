@@ -1,4 +1,4 @@
-  import fileDownload from 'js-file-download';
+
 
 
 function onClickMe() {
@@ -23,14 +23,11 @@ function onClickMe() {
   console.log('text4')
 
  // window.open(URL.createObjectURL(blob), "_blank");
-
-//  var a = document.createElement("a");
-  //a.href = URL.createObjectURL(blob);
-  //a.target = "_blank";
-  //a.click();
-  
-
-  fileDownload(blob, 'yarin-matan.pdf');
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.target = "_blank";
+  a.rel = "noopener";
+  a.click();
 
     console.log('text5')
   console.log('text5')
