@@ -22,10 +22,14 @@ function onClickMe() {
 
  // window.open(URL.createObjectURL(blob), "_blank");
 
-  var a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.target = "_blank";
-  a.click();
+//  var a = document.createElement("a");
+  //a.href = URL.createObjectURL(blob);
+  //a.target = "_blank";
+  //a.click();
+  
+  import fileDownload from 'js-file-download';
+  fileDownload(blob, 'yarin-matan.pdf');
+
     console.log('text5')
 }
 
