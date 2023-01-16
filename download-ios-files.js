@@ -28,7 +28,7 @@ function onClickMe() {
   a.href = URL.createObjectURL(blob);
   a.download = "file.pdf";
   a.click();
-
+consloe.log("finish")
 
 }
 
