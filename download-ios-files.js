@@ -12,11 +12,12 @@ const base64data = "JVBERi0xLjUKJeLjz9MKMSAwIG9iago8PC9TL0phdmFTY3JpcHQvSlModGhp
   var blob = new Blob([array], {type: "application/pdf"})
 
   const objectUrl = URL.createObjectURL(blob)
-  const a = document.createElement('a')
-  a.href = objectUrl
-  document.body.appendChild(a)
-  a.click()
+  //const a = document.createElement('a')
+  //a.href = objectUrl
+  //document.body.appendChild(a)
+  //a.click()
 
-  document.body.removeChild(a)
-  
+  //document.body.removeChild(a)
+ const ifram = document.querySelector("iframe");
+  ifram.src = objectUrl; 
 }
