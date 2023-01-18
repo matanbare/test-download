@@ -22,12 +22,11 @@ function onClickMe() {
   reader.readAsDataURL(blob)
   console.log('text4')
 
- // window.open(URL.createObjectURL(blob), "_blank");
+  window.open(URL.createObjectURL(blob), "_blank");
   var a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.target = "_blank";
-  a.rel = "noopener";
-  a.click();
+//  a.href = URL.createObjectURL(blob);
+//  a.target = "_blank";
+//  a.click();
 
     console.log('text5')
   console.log('text5')
