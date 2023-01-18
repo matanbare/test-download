@@ -16,8 +16,8 @@ function onClickMe() {
   reader.readAsDataURL(blob)
 
 
-  const objectUrl: string = URL.createObjectURL(blob)
-  const a: HTMLAnchorElement = document.createElement('a') as HTMLAnchorElement
+  const objectUrl = URL.createObjectURL(blob)
+  const a = document.createElement('a') as HTMLAnchorElement
 
   a.href = objectUrl
   a.download = fileName
@@ -27,4 +27,5 @@ function onClickMe() {
 
   document.body.removeChild(a)
   URL.revokeObjectURL(objectUrl)
+  console.log("test pass")
 }
