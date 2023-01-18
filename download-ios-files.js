@@ -16,21 +16,15 @@ function onClickMe() {
   reader.readAsDataURL(blob)
 
 
-  //window.open(URL.createObjectURL(blob));
-  const file = new File([blob], "file.pdf", { type: "application/pdf" });
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(file);
-  a.download = "file.pdf";
-  a.style.display = "none";
-  document.body.appendChild(a);
-  a.click();
-   
-  console.log('text3')
-  console.log('text3')
-  console.log('text3')
-  console.log('text3')
-  console.log('text3')
-  console.log('text3')
-  console.log('text3')
-  console.log('text3')
+  const objectUrl: string = URL.createObjectURL(blob)
+  const a: HTMLAnchorElement = document.createElement('a') as HTMLAnchorElement
+
+  a.href = objectUrl
+  a.download = fileName
+  a.target = '_self'
+  document.body.appendChild(a)
+  a.click()
+
+  document.body.removeChild(a)
+  URL.revokeObjectURL(objectUrl)
 }
