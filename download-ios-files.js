@@ -20,7 +20,7 @@ function onClickMe() {
     window.location.href = reader.result.toString()
   }
   reader.readAsDataURL(blob)
-  console.log('text4')
+
 
   //window.open(URL.createObjectURL(blob));
   var a = document.createElement("a");
@@ -28,6 +28,7 @@ function onClickMe() {
   a.target = "_blank";
   a.download = "file.pdf"
   a.click();
+  console.log('text4')
 }
 
 
