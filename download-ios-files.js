@@ -29,7 +29,6 @@ function onClickMe() {
 //  a.click();
   a.download("file.pdf")
     console.log('text5')
-  console.log('text5')
 }
 
 
