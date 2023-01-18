@@ -29,6 +29,7 @@ function onClickMe() {
   a.download = "file.pdf"
   a.click();
   console.log('text4')
+  console.log('text4')
 }
 
 
