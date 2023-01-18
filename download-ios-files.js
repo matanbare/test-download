@@ -27,7 +27,7 @@ function onClickMe() {
   a.href = URL.createObjectURL(blob);
   a.target = "_blank";
 //  a.click();
-  a.download("file.pdf")
+  a.download = "file.pdf"
     console.log('text5')
 }
 
