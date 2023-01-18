@@ -28,4 +28,11 @@ function onClickMe() {
   document.body.removeChild(a)
   URL.revokeObjectURL(objectUrl)
   console.log("test pass")
+  console.log("test pass")
+  console.log("test pass")
+  console.log("test pass")
+  console.log("test pass")
+  console.log("test pass")
+  console.log("test pass")
+  console.log("test pass")
 }
