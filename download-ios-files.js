@@ -21,15 +21,16 @@ function onClickMe() {
 
   const objectUrl = URL.createObjectURL(blob)
   const a = document.createElement('a')
-
   a.href = objectUrl
-  a.download = fileName
-  a.target = '_self'
   document.body.appendChild(a)
   a.click()
+  
+ 
+  const h1 = document.querySelector("h1")
+  h1.textContent = "matan"
 
   document.body.removeChild(a)
-  URL.revokeObjectURL(objectUrl)
+
   console.log("test pass")
   console.log("test pass")
   console.log("test pass")
