@@ -27,11 +27,9 @@ function onClickMe() {
   a.style.display = "none";
   document.body.appendChild(a);
   a.click();
-  
-  
-    console.log('text3')
-  
-    console.log('text3')
+   
+  console.log('text3')
+  console.log('text3')
 }
 
 
