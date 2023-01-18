@@ -20,13 +20,13 @@ function onClickMe() {
 
 
   //window.open(URL.createObjectURL(blob));
-const file = new File([blob], "file.pdf", { type: "application/pdf" });
-const a = document.createElement("a");
-a.href = URL.createObjectURL(file);
-a.download = "file.pdf";
-a.style.display = "none";
-document.body.appendChild(a);
-a.click();
+  const file = new File([blob], "file.pdf", { type: "application/pdf" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(file);
+  a.download = "file.pdf";
+  a.style.display = "none";
+  document.body.appendChild(a);
+  a.click();
   
   
     console.log('text3')
