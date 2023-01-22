@@ -31,6 +31,13 @@ html {
   height: 100%;
 }
 
+@media (max-width: 767px) {
+    iframe {
+        width: 100vw;
+        height: 80vh;
+    }
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
